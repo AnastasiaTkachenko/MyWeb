@@ -1,0 +1,303 @@
+/* Global View vs Desktop View */
+
+
+body {
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #EBEBEB;
+   
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+
+.container p .links {
+    font-size: 0.25rem;
+}
+.header-container {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 100px;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+}
+
+
+.col p {
+    font-size: 0.900rem;
+    padding: 20px 25px;
+    line-height: 1rem;
+}  
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+} 
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+.mybutton {
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+
+.mybutton:hover {
+    background-color:black;
+    transition-duration: 1s;  
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+.about-me {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 140px;
+}
+
+
+
+.container-about-me {
+    font-size: 20px;
+    padding:20px 50px 20px 50px;
+    color:rgb(107, 107, 107);
+    line-height: 35px;
+}
+
+.container-about-me h1 {
+    font-size: 30px;
+    color:#111111;
+    letter-spacing: 3px;
+    text-transform:uppercase;
+    line-height: 45px;
+    text-align-last:left;
+    padding-bottom: 35px;
+    text-align: justify;   
+}
+
+
+
+/* /* Contacts  */
+
+ .contacts {
+    padding-top:50px; 
+    padding-bottom: 100px;
+    
+   
+} 
+
+.line {
+   
+        border-top: 2px dashed;
+        border-color: #969696 !important;
+        margin-top:50px; padding: 30px;
+        position: relative;
+        
+      }
+
+
+      .fas {
+          color:#4158D0; 
+          font-size: 30px;
+          
+       
+      }
+
+
+      i {
+          margin-right: 23px;
+      }
+
+      .mail {
+          margin-right: 55px;
+          display:flex;
+      }
+
+      .phone {
+          display:flex;
+      }
+
+.contacts-container {
+   display:flex;
+   flex-wrap: wrap;
+}
+
+    
+/* Footer */
+
+footer {
+    background-color: #d4d4d4;
+    background-image: linear-gradient(19deg, #dbdbdb 0%, #7a7a7a 100%);
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align:center;
+    padding-top:20px;
+    width:100vw;
+}
+ 
+
+.highlight:hover{
+    color:black;
+    transition-duration: 1s;
+}
+
+/* Tablet View */
+@media (max-width: 768px){
+    
+.col {
+    width: 45%;
+}
+
+.hide-desktop-only {
+    display: block;
+}
+
+
+.header-container {
+    position: relative;
+}
+
+.container {
+    padding-top: 40px;
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    display: block;
+   }
+
+.logo {
+    padding: 40px 0; 
+}
+
+.mybutton {
+    margin-left: 0;
+}
+
+.mob-wrapper {
+    display: block;
+    padding-right: 30px;
+   
+}
+
+.mob-nav {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+   
+}
+
+.navbutton {
+    display: block;
+    background-color: #4158D0;
+    padding: 15px 30px;
+    margin-left: -70px;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    
+}
+
+.navbutton:hover {
+    background-color:black;
+    transition-duration: 1s;
+}
+
+.container-about-me {
+    width:100%;
+}
+
+.about-me {
+
+flex-wrap: wrap;
+    
+}
+
+
+/* Mobile View */
+@media (max-width: 400px){
+    
+    .col {
+        width:45%;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .about-me {
+    
+    flex-wrap: wrap;
+    
+     }
+
+   .photo-me {
+    width: 100%;
+   
+}
+
+.photo-me img {
+    width:100%;
+}
+    
+.contacts {
+    width: 100%;
+}
+
+.container-about-me {
+    width: 100%;
+}
+    }
+
+     
+
