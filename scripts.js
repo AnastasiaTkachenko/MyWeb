@@ -4,7 +4,6 @@ $(document).ready(function () {
     })
 });
 
-
 jQuery(document).ready(function ($) {
     var bArray = [];
     var sArray = [4, 6, 8, 10];
@@ -27,7 +26,7 @@ jQuery(document).ready(function ($) {
             $(this).remove()
         });
 
-    }, 350);
+    }, 375);
 
 });
 
